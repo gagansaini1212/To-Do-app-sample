@@ -19,12 +19,12 @@ class Dashboard extends React.Component {
                 <Text>
                     vcvkdcsgrtgrtrtg
                 </Text>
-                <Button
+                {/* <Button
                   onPress={()=>this.props.navigation.navigate('About')}
                     title="Learn More"
                     color="#841584"
                     accessibilityLabel="Learn more about this purple button"
-                  />
+                  /> */}
             </View>
             {/* <Header /> */}
           </Layout>
