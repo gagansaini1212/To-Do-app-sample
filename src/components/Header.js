@@ -1,7 +1,8 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { View } from 'react-native';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import styled from 'styled-components';
+import Dropdown from './Dropdown';
 
 const icon = <FontAwesome5 name={'caret-down'} solid  size={20} color="#fff" />;
 const IconSearch = <FontAwesome5 name={'search'} solid  size={20} color="#fff" />;
@@ -74,22 +75,12 @@ class Header extends React.Component {
         const {listVisible} = this.state;
         return(
             <Container>
-                 {listVisible &&  
-                  <ListContainer>
-                        <Text>jguyhuy</Text>
-                        <Text>jguyhuy</Text> 
-                        <Text>jguyhuy</Text> 
-                        <Text>jguyhuy</Text>
-                    </ListContainer>}
+                 {listVisible &&  <Dropdown />}
                 <ContainerLeft>
-               
                     <ImageStyled source={require('../assets/logo.jpeg')} />
                     <DropdownContainer onPress={this.handleToggleList}>
-                
                         <DropdownLeft>
-                            
-                                All Lists
-                            
+                            All Lists
                         </DropdownLeft>
                         {icon}
                     </DropdownContainer>
